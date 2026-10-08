@@ -87,6 +87,8 @@ Vector Retrieval   BM25 Retrieval
              │
              ▼
         Final Answer
+
+        
 📊 Job Screening Workflow
 Job Description
        │
@@ -126,6 +128,7 @@ Data Processing	Pandas
 Visualization	Plotly
 Document Processing	Unstructured, PyPDF
 Environment Management	python-dotenv
+
 📁 Project Structure
 Resume Screening RAG Project/
 │
@@ -161,6 +164,8 @@ Activate it on Windows:
 myvenv\Scripts\activate
 3. Install dependencies
 pip install -r requirements.txt
+
+
 🔑 API Key Setup
 
 For local development, create a .env file:
@@ -172,6 +177,8 @@ Do not upload .env to GitHub.
 For Streamlit Cloud deployment, add the API key through Streamlit Secrets:
 
 OPENAI_API_KEY = "your_openai_api_key"
+
+
 ▶️ Run the Application
 
 Run the Streamlit application:
@@ -187,6 +194,8 @@ Resume Q&A
 Job Description Screening
      │
      └── Enter JD → Rank candidates
+
+     
 💬 Example Resume Q&A
 What are the skills of Srichetan Badugu?
 
@@ -195,6 +204,8 @@ The system retrieves the relevant resume chunks and generates an answer based on
 If the requested information cannot be found:
 
 I couldn't find sufficient information in the retrieved resumes.
+
+
 📋 Example Job Description
 We are looking for a Data Scientist / Machine Learning Engineer.
 
@@ -234,6 +245,8 @@ Missing Requirements
 Candidate Strengths
 Candidate Gaps
 AI Evaluation Reason
+
+
 🔒 Grounded AI Responses
 
 The Resume Q&A system is designed to reduce hallucination by instructing the LLM to use only the retrieved resume evidence.
